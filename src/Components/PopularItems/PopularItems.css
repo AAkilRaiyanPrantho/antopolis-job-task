@@ -5,12 +5,143 @@
     align-items: center;
     padding-left: 300px;
     padding-right: 300px;
+    margin-bottom: 10px;
 }
 
-.Categories {
-    width: 300px;
-    height: 86px;
+
+  .category-hovering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+  .hover-buttons {
+    width: 250px;
+    height: 85px;
     border-radius: 5px;
-    box-shadow: black;
-    border: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 1px 5px 1px grey;
+    gap: 10px;
+    padding: 10px 15px;
+    background: #ffffff;
+    color: #F72D57;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .hover-buttons1 {
+    width: 250px;
+    height: 85px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 1px 5px 1px grey;
+    gap: 10px;
+    padding: 10px 15px;
+    background: #F72D57;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .full-hover :hover {
+    color: #ff42a5;
+    border: 1px solid #ff42a5;
+  }
+  .full-hover1 :hover {
+    color: seashell;
+    border: 1px solid seashell;
+  }
+  .hover-buttons:hover p {
+    border: none;
+    color: #ff42a5;
+  }
+  .hover-buttons1:hover p {
+    border: none;
+    color: seashell;
+  }
+  .hover-buttons:hover svg {
+    border: none;
+    color: #ff42a5;
+  }
+  .hover-buttons1:hover svg {
+    border: none;
+    color: seashell;
+  }
+
+  /* Card Designs */
+.foodCards {
+    display: flex;
+    gap: 10px;
+}
+.card {
+    width: 300px;
+    height: 320px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-image {
+    width: 240px;
+    height: 115px;
+    padding: 10px;
+  }
+  
+  .card-content {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+  }
+  
+  .card-description {
+    margin-bottom: 2px;
+  }
+  
+  .card-price {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .card-button {
+    background-color: #F72D57;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-rating {
+    position: relative;
+    top: -295px;
+    right: -220px;
+    width: 30px;
+    height: auto;
+  }
+
+  /* Mobile Responsive Starts */
+@media screen and (max-width: 425px) {
+    
 }

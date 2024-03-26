@@ -17,3 +17,10 @@
 #bannerText {
   width: 520px;
 }
+
+
+
+/* Mobile Responsive Starts */
+@media screen and (max-width: 425px) {
+    
+}
