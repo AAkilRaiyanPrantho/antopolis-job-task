@@ -22,5 +22,8 @@
 
 /* Mobile Responsive Starts */
 @media screen and (max-width: 425px) {
-    
+    .Banner {
+        flex-direction: column;
+        margin-top: 20px;
+      }
 }

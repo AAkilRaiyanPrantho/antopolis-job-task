@@ -172,7 +172,7 @@ const PopularItems = () => {
       {/* Food Cards */}
       <div className="foodCards">
         {/* Card 1 */}
-        {/* <div className="card">
+        <div className="card">
       <img className="card-image" src={pz1} alt='title' />
       <div className="card-content">
         <h2 className="card-title">Pepperoni Pizza</h2>
@@ -181,9 +181,9 @@ const PopularItems = () => {
         <button className="card-button" >Add to cart</button>
       </div>
       <img className="card-rating" src={pr1} alt="Rating" />
-    </div> */}
+    </div>
         {/* Card 2 */}
-        {/* <div className="card">
+        <div className="card">
       <img className="card-image" src={pz2} alt='title' />
       <div className="card-content">
         <h2 className="card-title">Pepperoni Pizza</h2>
@@ -192,9 +192,9 @@ const PopularItems = () => {
         <button className="card-button" >Add to cart</button>
       </div>
       <img className="card-rating" src={pr2} alt="Rating" />
-    </div> */}
+    </div>
         {/* Card 3 */}
-        {/* <div className="card">
+        <div className="card">
       <img className="card-image" src={pz3} alt='title' />
       <div className="card-content">
         <h2 className="card-title">Vegetarian Pizza</h2>
@@ -203,9 +203,9 @@ const PopularItems = () => {
         <button className="card-button" >Add to cart</button>
       </div>
       <img className="card-rating" src={pr3} alt="Rating" />
-    </div> */}
+    </div>
         {/* Card 4 */}
-        {/* <div className="card">
+        <div className="card">
       <img className="card-image" src={pz4} alt='title' />
       <div className="card-content">
         <h2 className="card-title">Mediterranean Pizza</h2>
@@ -214,7 +214,7 @@ const PopularItems = () => {
         <button className="card-button" >Add to cart</button>
       </div>
       <img className="card-rating" src={pr4} alt="Rating" />
-    </div> */}
+    </div>
       </div>
       <Swiper
         spaceBetween={30}

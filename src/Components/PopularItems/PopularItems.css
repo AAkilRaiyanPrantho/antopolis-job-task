@@ -75,8 +75,8 @@
 
   /* Card Designs */
 .foodCards {
-    display: flex;
-    gap: 10px;
+    display: none;
+    /* gap: 10px; */
 }
 .card {
     width: 300px;
@@ -143,5 +143,15 @@
 
   /* Mobile Responsive Starts */
 @media screen and (max-width: 425px) {
-    
+    .Popular {
+        flex-direction: column;
+
+    .category-hovering {
+        flex-wrap: wrap;
+      }
+      .foodCards {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
 }

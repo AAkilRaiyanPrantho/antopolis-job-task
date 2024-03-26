@@ -13,5 +13,14 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media screen and (max-width: 425px) {
+    .swiper {
+        display: none;
+      }
+      .swiper-slide {
+        display: none;
+      }
+}
   
   

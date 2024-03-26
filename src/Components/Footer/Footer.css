@@ -78,5 +78,14 @@
 
 /* Mobile Responsive Starts */
 @media screen and (max-width: 425px) {
-    
+    .full-footer {
+        flex-direction: column;
+        width: 100%;
+      }
+      #socials-1 {
+        display: none;
+      }
+      #socials-2 {
+        display: flex;
+      }
   }
