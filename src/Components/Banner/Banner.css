@@ -1,0 +1,19 @@
+.Banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 300px;
+  margin-top: -45px;
+}
+
+#bannerImage {
+  width: 663px;
+  height: 665px;
+  margin-top: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+#bannerText {
+  width: 520px;
+}

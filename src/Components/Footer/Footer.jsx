@@ -111,26 +111,7 @@ const Footer = () => {
         <p>Autumnal Bulgier</p>
         </div>
         
-        {/* <div className="footer-links">
-            <div>
-              <a href="">Our Story</a>
-            </div>
-            <div>
-              <a href="">Games</a>
-            </div>
-            <div>
-              <a href="">Web Games</a>
-            </div>
-            <div>
-              <a href="">Careers</a>
-            </div>
-            <div>
-              <a href="">Support</a>
-            </div>
-            <div>
-              <a href="">My Account</a>
-            </div>
-          </div> */}
+        
         <div className="footer-socials" id="socials-2">
           <div>
             <a href="">
@@ -197,23 +178,7 @@ const Footer = () => {
             </svg>
           </div>
         </div>
-        {/* <div className="footer-terms">
-            <div>
-              <p>Terms and Conditions</p>
-            </div>
-            <div>
-              <p>Privacy Policy</p>
-            </div>
-            <div>
-              <p>Cookie Policy</p>
-            </div>
-            <div>
-              <p>Privacy Settings</p>
-            </div>
-          </div> */}
-        {/* <div className="footer-copyright">
-            <p>Play Games @ Gamer @ 2000-2023 Gamer Bangladesh</p>
-          </div> */}
+        
       </div>
     </footer>
   );
