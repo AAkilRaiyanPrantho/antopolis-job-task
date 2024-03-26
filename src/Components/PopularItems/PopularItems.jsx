@@ -8,6 +8,22 @@ import pz2 from './../../../images/pz2.jfif'
 import pz3 from './../../../images/pz3.jfif'
 import pz4 from './../../../images/pz4.jfif'
 
+
+// swiper
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import './styles.css';
+
+// import required modules
+import { Pagination, Navigation, HashNavigation } from 'swiper/modules';
+
 const PopularItems = () => {
   return (
     <div className="Popular">
@@ -156,6 +172,64 @@ const PopularItems = () => {
       {/* Food Cards */}
       <div className="foodCards">
         {/* Card 1 */}
+        {/* <div className="card">
+      <img className="card-image" src={pz1} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Pepperoni Pizza</h2>
+        <p className="card-description">Di napoles</p>
+        <p className="card-price">$11,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr1} alt="Rating" />
+    </div> */}
+        {/* Card 2 */}
+        {/* <div className="card">
+      <img className="card-image" src={pz2} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Pepperoni Pizza</h2>
+        <p className="card-description">Di napoles</p>
+        <p className="card-price">$13,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr2} alt="Rating" />
+    </div> */}
+        {/* Card 3 */}
+        {/* <div className="card">
+      <img className="card-image" src={pz3} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Vegetarian Pizza</h2>
+        <p className="card-description">Cosa di Mario</p>
+        <p className="card-price">$12,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr3} alt="Rating" />
+    </div> */}
+        {/* Card 4 */}
+        {/* <div className="card">
+      <img className="card-image" src={pz4} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Mediterranean Pizza</h2>
+        <p className="card-description">Milano</p>
+        <p className="card-price">$15,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr4} alt="Rating" />
+    </div> */}
+      </div>
+      <Swiper
+        spaceBetween={30}
+        hashNavigation={{
+          watchState: true,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation, HashNavigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide data-hash="slide1"><div className="foodCards">
+        {/* Card 1 */}
         <div className="card">
       <img className="card-image" src={pz1} alt='title' />
       <div className="card-content">
@@ -199,7 +273,146 @@ const PopularItems = () => {
       </div>
       <img className="card-rating" src={pr4} alt="Rating" />
     </div>
+      </div></SwiperSlide>
+        <SwiperSlide data-hash="slide2"><div className="foodCards">
+        {/* Card 1 */}
+        <div className="card">
+      <img className="card-image" src={pz1} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Pepperoni Pizza</h2>
+        <p className="card-description">Di napoles</p>
+        <p className="card-price">$11,99</p>
+        <button className="card-button" >Add to cart</button>
       </div>
+      <img className="card-rating" src={pr1} alt="Rating" />
+    </div>
+        {/* Card 2 */}
+        <div className="card">
+      <img className="card-image" src={pz2} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Pepperoni Pizza</h2>
+        <p className="card-description">Di napoles</p>
+        <p className="card-price">$13,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr2} alt="Rating" />
+    </div>
+        {/* Card 3 */}
+        <div className="card">
+      <img className="card-image" src={pz3} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Vegetarian Pizza</h2>
+        <p className="card-description">Cosa di Mario</p>
+        <p className="card-price">$12,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr3} alt="Rating" />
+    </div>
+        {/* Card 4 */}
+        <div className="card">
+      <img className="card-image" src={pz4} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Mediterranean Pizza</h2>
+        <p className="card-description">Milano</p>
+        <p className="card-price">$15,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr4} alt="Rating" />
+    </div>
+      </div></SwiperSlide>
+        <SwiperSlide data-hash="slide3"><div className="foodCards">
+        {/* Card 1 */}
+        <div className="card">
+      <img className="card-image" src={pz1} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Pepperoni Pizza</h2>
+        <p className="card-description">Di napoles</p>
+        <p className="card-price">$11,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr1} alt="Rating" />
+    </div>
+        {/* Card 2 */}
+        <div className="card">
+      <img className="card-image" src={pz2} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Pepperoni Pizza</h2>
+        <p className="card-description">Di napoles</p>
+        <p className="card-price">$13,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr2} alt="Rating" />
+    </div>
+        {/* Card 3 */}
+        <div className="card">
+      <img className="card-image" src={pz3} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Vegetarian Pizza</h2>
+        <p className="card-description">Cosa di Mario</p>
+        <p className="card-price">$12,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr3} alt="Rating" />
+    </div>
+        {/* Card 4 */}
+        <div className="card">
+      <img className="card-image" src={pz4} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Mediterranean Pizza</h2>
+        <p className="card-description">Milano</p>
+        <p className="card-price">$15,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr4} alt="Rating" />
+    </div>
+      </div></SwiperSlide>
+        <SwiperSlide data-hash="slide4"><div className="foodCards">
+        {/* Card 1 */}
+        <div className="card">
+      <img className="card-image" src={pz1} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Pepperoni Pizza</h2>
+        <p className="card-description">Di napoles</p>
+        <p className="card-price">$11,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr1} alt="Rating" />
+    </div>
+        {/* Card 2 */}
+        <div className="card">
+      <img className="card-image" src={pz2} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Pepperoni Pizza</h2>
+        <p className="card-description">Di napoles</p>
+        <p className="card-price">$13,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr2} alt="Rating" />
+    </div>
+        {/* Card 3 */}
+        <div className="card">
+      <img className="card-image" src={pz3} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Vegetarian Pizza</h2>
+        <p className="card-description">Cosa di Mario</p>
+        <p className="card-price">$12,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr3} alt="Rating" />
+    </div>
+        {/* Card 4 */}
+        <div className="card">
+      <img className="card-image" src={pz4} alt='title' />
+      <div className="card-content">
+        <h2 className="card-title">Mediterranean Pizza</h2>
+        <p className="card-description">Milano</p>
+        <p className="card-price">$15,99</p>
+        <button className="card-button" >Add to cart</button>
+      </div>
+      <img className="card-rating" src={pr4} alt="Rating" />
+    </div>
+      </div></SwiperSlide>
+      </Swiper>
     </div>
   );
 };
