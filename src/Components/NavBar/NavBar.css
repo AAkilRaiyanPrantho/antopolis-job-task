@@ -46,3 +46,10 @@
     text-decoration: underline;
     color: #F72D57;
   }
+
+
+
+  /* Mobile Responsive Starts */
+@media screen and (max-width: 425px) {
+    
+}
